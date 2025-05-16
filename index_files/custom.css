@@ -1,0 +1,17 @@
+
+.nestedlist ol {  
+    counter-reset: item;  
+}  
+.nestedlist ol li {  
+    display: block;  
+    position: relative;  
+}  
+.nestedlist ol li:before {  
+    content: counters(item, ".")".";  
+    counter-increment: item;  
+    position: absolute;  
+    margin-right: 100%;  
+    right: 10px; /* space between number and text */  
+}  
+
+
